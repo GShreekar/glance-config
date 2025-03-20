@@ -5,7 +5,7 @@
     - size: small
       widgets:
         - type: calendar
-          first-day-of-week: monday
+          first-day-of-week: sunday
 
         - type: twitch-channels
           channels:
@@ -51,6 +51,35 @@
           hour-format: 12h # alternatively "24h"
           # Optionally hide the location from being displayed in the widget
           # hide-location: true
+        
+        - type: bookmarks
+          groups:
+            - links:
+                - title: Gmail
+                  url: https://mail.google.com/mail/u/0/
+                - title: Github Profile
+                  url: https://github.com/GShreekar
+                - title: LinkedIn
+                  url: https://www.linkedin.com/in/
+            - title: Entertainment
+              color: 10 70 50
+              links:
+                - title: Letterboxd
+                  url: https://letterboxd.com/
+                - title: Trackt
+                  url: https://trakt.tv/
+                -title: IMDB
+                  url: https://www.imdb.com/
+            - title: Social
+              color: 200 50 50
+              links:
+                - title: Reddit
+                  url: https://www.reddit.com/
+                - title: Twitter
+                  url: https://twitter.com/
+                - title: Medium
+                  url: https://medium.com/
+
 
         - type: markets
           markets:
