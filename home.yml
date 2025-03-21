@@ -18,6 +18,20 @@
 
     - size: full
       widgets:
+        - type: search
+          search-engine: duckduckgo
+          new-tab: true
+          bangs:
+            - title: YouTube
+              shortcut: "!yt"
+              url: https://www.youtube.com/results?search_query={QUERY}
+            - title: IMDB
+              shortcut: "!imdb"
+              url: https://www.imdb.com/find?q={QUERY}
+            - title: Reddit
+              shortcut: "!r"
+              url: https://www.reddit.com/search?q={QUERY}
+
         - type: group
           widgets:
             - type: hacker-news
@@ -32,7 +46,6 @@
             - UC7OXY2c5apsxw4J-Kx4p_NQ # First Edition Arts Channel
             - UCaEwOegjclfqYlfVhO7hLmQ # Bhimanna
             - UCdp4_l1vPmpN-gDbUwhaRUQ # Branch Education
-
 
         - type: group
           widgets:
@@ -68,8 +81,6 @@
                   url: https://letterboxd.com/
                 - title: Trackt
                   url: https://trakt.tv/
-                -title: IMDB
-                  url: https://www.imdb.com/
             - title: Social
               color: 200 50 50
               links:
@@ -79,7 +90,6 @@
                   url: https://twitter.com/
                 - title: Medium
                   url: https://medium.com/
-
 
         - type: markets
           markets:
